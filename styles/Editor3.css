@@ -1,0 +1,67 @@
+header {
+    position: static;
+}
+
+body {
+    background-image: url(../images/background-editor3.jpg);
+    background-size: cover;
+}
+/*------------------------------------------------Start Content-----------------------------------------------------*/
+#content {
+    color: #FFFFFF;
+    background-color: rgb(18, 18, 18, 0.4);
+    width: 780px;
+    padding: 50px;
+    margin: 50px auto;
+    border: 1px solid rgb(18, 18, 18, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(15px) saturate(120%);
+}
+
+#content h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #2F2F2F;
+}
+
+#content h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px #2F2F2F;
+}
+
+#content h3 {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-shadow: 1.5px 1.5px #2F2F2F;
+    border-bottom: 2px solid #2F2F2F;
+    padding-bottom: 5px;
+}
+
+#content a {
+    display: block;
+    padding: 10px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-decoration: none;
+    border-bottom: 1px solid #CCCCCC;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 2px 2px #2F2F2F;
+    text-shadow: 1.5px 1.5px #2F2F2F;
+}
+
+#content h4 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#content a:hover {
+    background-color: rgb(18, 18, 18, 0.5);
+    border-bottom: 1px solid transparent;
+    box-shadow: 2px 2px 3px rgba(18, 18, 18, 0.4);
+}
+/*----------------------------------------------------End Content--------------------------------------------------*/

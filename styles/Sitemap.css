@@ -1,0 +1,133 @@
+
+body {
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+    background-color:#ecf4fb ;
+ }
+.home {
+    height: 85px;
+    margin:  auto;
+    position: absolute;
+    top: 18%;
+    right: 600px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+.gallery {
+    height: 85px;
+    margin: 0 auto;
+    position: absolute;
+    top: 41.5%;
+    right: 1200px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+.comments{
+    height: 85px;
+    margin: 0 auto;
+    position: absolute;
+    top: 41.5%;
+    right: 964px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+.quiz{
+    height: 85px;
+    margin: 0 auto;
+    position: absolute;
+    top: 41.5%;
+    right: 728px;
+    transform: translateY(-50%);
+    width: 320px;
+
+}
+.store{
+    height: 85px;
+    margin: 0 auto;
+    position: absolute;
+    top: 41.5%;
+    right: 492px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+.aboutus {
+    height: 85px;
+    margin: 0 auto;
+    position: absolute;
+    top: 41.5%;
+    right: 256px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+.additionalContent {
+    height: 85px;
+    margin: 0 auto;
+    position: absolute;
+    top: 41.5%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+
+.box{
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 6px;
+    stroke: #55dd33;
+}
+.name {
+    color: black;
+    font-family: "sans-serif";
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 32px;
+    padding: 10px;
+    position: relative;
+    top: -60px;
+}
+
+@font-face{
+    font-family: "Trebuchet MS","sans-serif";
+}
+
+@keyframes draw {
+    0% {
+        stroke-dasharray: 140 540;
+        stroke-dashoffset: -474;
+        stroke-width: 8px;
+    }
+    100% {
+        stroke-dasharray: 760;
+        stroke-dashoffset: 0;
+        stroke-width: 4px;
+    }
+}
+
+/*lines*/
+
+.Line1{
+    position: absolute;
+    top: 43.5%;
+    right: 1250px;
+    stroke: #55dd33 ;
+    stroke-width:3px;
+}
+.Main1 {
+    position: absolute;
+    stroke: #55dd33;
+    top: 18.7%;
+    right: 170px;
+    stroke-width: 3px;
+}
+
+footer {
+    margin-top: 570px;
+}

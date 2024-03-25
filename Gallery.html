@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cricket Gallery </title>
+    <link rel ="icon" href="images/logo-icon.png">
+    <link rel ="stylesheet" type="text/css" href="styles/NavBar.css">
+    <link rel ="stylesheet" type="text/css" href="styles/Gallery.css">
+</head>   
+<body>
+<!-- Navigation bar -->
+<header>
+    <div class="container">
+        <nav>
+            <a href="Home.html"><img class="logo" src="images/logo.png" alt="Website Logo"></a>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Gallery.html "class="active">Gallery</a></li>
+                <li><a href="Comments.html">Comments</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="Store.html">Store</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- End Navigation bar -->
+
+<body>
+        <section>
+            <div class ="cricket B">
+                <img src="images/background.jpg" class=" video" width="1920" alt="cricket">
+            </div>
+        </section>
+
+        <div class="heading">
+            <h2>GALLERY OF</h2>
+            <p>ALL TIME - ALL ROUNDERS</p>
+        </div>
+
+    <ul>
+        <li class="dropdownList"><a class="dropbutton">Change Page Background Colour:</a>
+        <div class="dropdownListcontent">
+            <a href="javascript:oneBackground()">White</a><br>
+            <a href="javascript:twoBackground()">Orange</a><br>
+            <a href="javascript:threeBackground()">Blue</a><br>
+            <a href="javascript:fourBackground()">Green</a><br><br>
+        </div><br><br><br>
+        </li>
+    </ul>
+
+
+    <div class="Main">
+        <div class="img-gallery">
+
+            <img src="images/1.kapil dev.jpg"alt="Kapil dev"onmouseover="enlargeImage(this);displayDescriptionKAPILDEV(this);">
+
+            <img src="images/2.Greg Chappell.jpg"alt="Greg Chappell"onmouseover="enlargeImage(this);displayDescriptionGREGCHAPPELL(this);">
+
+            <img src="images/3.Andrew Flintoff.jpg"alt="Andrew Flintoff"onmouseover="enlargeImage(this);displayDescriptionANDREWFLINTOFF(this);">
+
+            <img src="images/4.Viv Richards.jpg"alt="Viv Richards"onmouseover="enlargeImage(this);displayDescriptionVIVRICHARDS(this);">
+
+            <img src="images/5.Lance Klusener.jpg"alt="Lance Klusener"onmouseover="enlargeImage(this);displayDescriptionLANCEKLUSENER(this);">
+
+            <img src="images/6.Chris Gayle.jpg"alt="Chris Gayle"onmouseover="enlargeImage(this);displayDescriptionCHRISGAYLE(this);">
+
+            <img src="images/7.Jacques Kallis.jpg"alt="Jacques Kallis"onmouseover="enlargeImage(this);displayDescriptionJACQUESKALLIS(this);">
+
+            <img src="images/8. Steve Waugh.jpg"alt="Steve Waugh"onmouseover="enlargeImage(this);displayDescriptionSTEVEWAUGH(this);">
+
+            <img src="images/9.Shaun Pollock.jpg"alt="Shaun Pollock"onmouseover="enlargeImage(this);displayDescriptionSHAUNPOLLOCK(this);">
+
+            <img src="images/10.Imran Khan.jpg"alt="Imran Khan"onmouseover="enlargeImage(this);displayDescriptionIMRANKHAN(this);">
+
+        </div>
+
+    </div> 
+    
+    <div class="Main2">
+        <span onclick="this.parentElement.style.display='none'" class="closebutton">&times;</span>
+        <img id="enlargeImage" style="width:36%" alt="img"  >
+        <div >
+            <h1 id="imageTitle">Image Title</h1>
+        </div>
+        <div >
+            <h2 id="imageDescription">Description of the image</h2>
+        </div>
+    </div>
+    <button id="scroll-to-top">
+        <img src="images/top.png" alt="Scroll to Top">
+    </button>  
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 <span class="website-name">CRICKET ZONE</span>. All rights reserved. | <a class="page-editor-link" href="Editor4.html">Page Editor</a></p>
+        </div>
+    </footer>
+    <!--end footer-->
+    <script>
+
+        function enlargeImage(images) {
+            var enlargeImage = document.getElementById("enlargeImage");
+            var imageTitle = document.getElementById("imageTitle");
+            enlargeImage.src = images.src;
+            imageTitle.innerHTML = images.alt;
+            enlargeImage.parentElement.style.display = "block";
+        }
+        function displayDescriptionKAPILDEV(){
+                document.getElementById("imageDescription").innerHTML = "Kapil Dev is a former Indian cricketer and captain, known for leading India to victory in the 1983 Cricket World Cup. He is considered one of the greatest all-rounders in cricket history.";
+        }
+        function displayDescriptionGREGCHAPPELL(){
+                document.getElementById("imageDescription").innerHTML = "Greg Chappell is a former Australian cricketer and captain, considered one of the greatest batsmen of all time. He played 87 Tests and 74 ODIs for Australia from 1970 to 1984.";
+        }
+        function displayDescriptionANDREWFLINTOFF(){
+                document.getElementById("imageDescription").innerHTML = "Andrew Flintoff is a former English cricketer, known for his all-round abilities as a fast bowler and hard-hitting batsman. He played 79 Tests and 141 ODIs for England from 1998 to 2009.";
+        }
+        function displayDescriptionVIVRICHARDS(){
+                document.getElementById("imageDescription").innerHTML = "Viv Richards is a former West Indian cricketer, regarded as one of the greatest batsmen in the history of the game. He played 121 Tests and 187 ODIs for the West Indies from 1974 to 1991.";
+        }
+        function displayDescriptionLANCEKLUSENER(){
+                document.getElementById("imageDescription").innerHTML = "Lance Klusener is a former South African cricketer, known for his powerful hitting and effective bowling in both Test and ODI cricket. He played 49 Tests and 171 ODIs for South Africa from 1996 to 2004.";
+        }
+        function displayDescriptionCHRISGAYLE(){
+                document.getElementById("imageDescription").innerHTML = "Chris Gayle is a Jamaican cricketer, known for his aggressive and entertaining batting style. He has played over 100 Tests and 300 ODIs for the West Indies since his debut in 1999.";
+        }
+        function displayDescriptionJACQUESKALLIS(){
+                document.getElementById("imageDescription").innerHTML = "Jacques Kallis is a former South African cricketer, known for his all-round abilities as a batsman, bowler, and fielder. He played 166 Tests and 328 ODIs for South Africa from 1995 to 2014.";
+        }
+        function displayDescriptionSTEVEWAUGH(){
+                document.getElementById("imageDescription").innerHTML = "Steve Waugh is a former Australian cricketer and captain, known for his gritty determination and leadership qualities. He played 168 Tests and 325 ODIs for Australia from 1985 to 2004.";
+        }
+        function displayDescriptionSHAUNPOLLOCK(){
+                document.getElementById("imageDescription").innerHTML = "Shaun Pollock is a former South African cricketer, known for his accurate and economical bowling and useful batting lower down the order. He played 108 Tests and 303 ODIs for South Africa from 1995 to 2008.";
+        }
+        function displayDescriptionIMRANKHAN(){
+                document.getElementById("imageDescription").innerHTML = "Imran Khan is a former Pakistani cricketer and captain, known for his all-round abilities as a fast bowler and middle-order batsman. He played 88 Tests and 175 ODIs for Pakistan from 1971 to 1992.";
+        }
+        
+        
+        function oneBackground(){
+                    document.body.style.backgroundColor = "#ecf4fb";
+                }
+        function twoBackground(){
+                    document.body.style.backgroundColor = "#FFA500";
+                }
+        function threeBackground(){
+                    document.body.style.backgroundColor = "#00d4ff";
+                }
+        function fourBackground(){
+                    document.body.style.backgroundColor = "#00A170";
+                }
+
+    </script>
+    <script src="scripts/ScrollToTopButton.js"></script>
+</body>
+</html>

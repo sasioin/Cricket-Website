@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Foarm</title>
+    <link rel="icon" href="images/logo-icon.png">
+    <link rel="stylesheet" href="styles/Checkout.css">
+    <link rel="stylesheet" href="styles/NavBar.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="Home.html"><img class="logo" src="images/logo.png" alt="Website Logo"></a>
+                <ul class="nav-links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Comments.html">Comments</a></li>
+                    <li><a href="Quiz.html">Quiz</a></li>
+                    <li><a href="Sitemap.html">Sitemap</a></li>
+                    <li><a href="Store.html">Store</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+      </header>
+    <div id='form-wrapper'>
+        <form>
+      
+          <div id='header' class='text-center mb-3'>
+            <h1>Proceed The Order!</h1>
+          </div>
+      
+          <div class='text-center'>
+            <i class="fab fa-cc-visa fa-3x mr-3"></i>
+            <i class="fab fa-cc-mastercard fa-3x mr-3"></i>
+            <i class="fab fa-cc-amex fa-3x mr-3"></i>
+            <i class="fab fa-cc-discover fa-3x mr-3"></i>
+          </div>
+      
+          <h5>Billing Info</h4>
+      
+            <hr>
+      
+            <div class='form-group mb-1'>
+              <label class='mb-1' for='firstName'>First Name</label>
+              <input class='form-control mb-1' id='firstName' type='text' placeholder='John'>
+            </div>
+      
+            <div class='form-group mb-1'>
+              <label class='mb-1' for='lastName'>Last Name</label>
+              <input id='lastName' type='text' class='form-control' placeholder='Dough'>
+            </div>
+      
+            <div class='form-group mb-1'>
+              <label class='mb-1'>Street</label>
+              <input class='form-control' type='text' id='street1' placeholder='A1A Beach Front Ave'>
+            </div>
+      
+            <div class='form-group mb-1'>
+              <label class='mb-1' for='city'>City</label>
+              <input type='text' id='city' class='form-control' placeholder='Miami'>
+            </div>
+      
+            <div class='form-row mb-2'>
+              <div class='col-md-8'>
+                <label class='mb-1' for='state'>State</label>
+                <input id='state' class='form-control' placeholder='Florida'>
+              </div>
+              <div class='col-md-4'>
+      
+                <label class='mb-1' for='zip'>Zip</label>
+                <input type='text' id='zip' class='form-control' placeholder='00666'>
+              </div>
+            </div>
+      
+            <h5>Card Info</h4>
+      
+              <hr class='mb-1'>
+      
+              <div class='form-group mb-1'>
+                <label class='mb-1' for='nameOnCard'>Name on card</label>
+                <input class='form-control' id='nameOnCard' placeholder='Johnny Big Dough'>
+              </div>
+      
+              <div class='form-group mb-1'>
+                <label class='mb-1' for='cardNum'>Card number</label>
+                <input class='form-control' id='cardNum' placeholder>
+              </div>
+      
+              <div class='form-row mb-1'>
+                <div class='col'>
+                  <label class='mb-0' for='expMonth'>Expiration Month</label>
+                  <select class='form-control' id='expMonth'>
+                    <option value='01'>Jan</option>
+                    <option value='02'>Feb</option>
+                    <option value='03'>March</option>
+                    <option value='04'>April</option>
+                    <option value='05'>May</option>
+                    <option value='06'>June</option>
+                    <option value='07'>July</option>
+                    <option value='08'>Aug</option>
+                    <option value='09'>Sept</option>
+                    <option value='10'>Oct</option>
+                    <option value='11'>Nov</option>
+                    <option value='12'>Dec</option>
+                  </select>
+                </div>
+                <div class='col'>
+                  <label class='mb-0' for='expYear'>Exp Year</label>
+                  <select class='form-control' id='expYear'>
+                    <option value='2023'>2023</option>
+                    <option value='2023'>2022</option>
+                    <option value='2023'>2021</option>
+                    <option value='2023'>2020</option>
+                    <option value='2023'>2019</option>
+                  </select>
+                </div>
+                <div class='col'>
+                  <label class='mb-0' for='ccv'>CCV</label>
+                  <input placeholder='* * * *' class='form-control' id='ccv'>
+                </div>
+                <button class='btn btn-primary mt-4' type='submit'><i class="fas fa-lock mr-2"></i>Submit Payment</button>
+              </div>
+        </form>
+      </div>
+      <footer>
+        <div class="container">
+          <p>&copy; 2023 <span class="website-name">CRICKET ZONE</span>. All rights reserved. | <a class="page-editor-link" href="Editor1.html">Page Editor</a></p>
+        </div>
+      </footer>
+      
+      
+    
+</body>
+</html>

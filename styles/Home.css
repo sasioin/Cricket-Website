@@ -1,0 +1,251 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7;
+}
+
+/*---------------------------------------------------Start Navigation---------------------------------------------------*/
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    box-shadow: 0 1px 10px rgba(144, 144, 144, 0.1);
+    z-index: 1;
+}
+  
+.container {
+    color: #121212;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 380px;
+}
+  
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li +li {
+    margin-left: 50px;
+}
+
+.nav-links li a {
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 33px;
+    border-bottom: 4px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+  
+.nav-links li a:hover {
+    border-bottom: 4px solid #121212;
+}
+  
+.nav-links li a.active {
+    color: #55DD33;
+    border-bottom: 4px solid #55DD33; 
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #121212;
+}
+/*--------------------------------------------------End Navigation-----------------------------------------------------*/
+
+/*------------------------------------------------Start Content-----------------------------------------------------*/
+#content {
+    background-color: #F7F7F7;
+    max-width: 960px;
+}
+
+#image-box {
+    display: block;
+    width: 1519px;
+    height: 250px;
+    margin-left: -280px;
+    object-fit: cover;
+    object-position: 50% 16%;
+    margin-bottom: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    filter: brightness(90%) saturate(140%);
+}
+  
+#intro {
+    text-align: center;
+    margin: 50px 0 25px 0;
+}
+
+.website-name {
+    color: #55dd33;
+    font-weight: bold;;
+}
+  
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+#intro p {
+    padding-top: 20px;
+    font-size: 18px;
+    text-align: justify;
+    text-align-last: center;
+    letter-spacing: 1.3px;
+    line-height: 1.5;
+    word-spacing: 3.6px;
+    font-style: oblique;
+}
+
+#shop-now-button {
+    color: #55DD33;
+    text-decoration: none;
+    font-weight: bold;
+}
+    
+#shop-now-button:hover {
+    color: #449922;
+}
+
+#featured-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+  
+.featured-card {
+    background-color: #FFFFFF;
+    width: 43%;
+    margin-bottom: 40px;
+    padding: 20px;
+    box-shadow: -2.4px 2.4px 3.2px rgba(0, 0, 0, 0.15);
+    border-left: 5px solid #121212;
+    border-bottom: 5px solid #55DD33;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.featured-card:hover {
+    transform: translate(5px, -5px);
+    box-shadow: -4.8px 4.8px 6.4px rgba(0, 0, 0, 0.15);
+}
+ 
+.featured-card h3 {
+    font-size: 24px;
+    background-color: rgb(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.featured-card p {
+    text-align: justify;
+    font-style: oblique;
+    background-color: rgb(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 5px;
+    border-radius: 5px;
+}
+  
+.featured-card a {
+    display: inline-block;
+    background-color: #121212;
+    color: #F7F7F7;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.featured-card a:hover {
+    background-color: #909090;
+}
+
+ #card1 { 
+    background-image: url(../images/card1.jpeg);
+    background-size: cover;
+}
+
+#card2 {
+    background-image: url(../images/card2.png);
+    background-size: cover;
+}
+
+#card3 { 
+    background-image: url(../images/card3.jpg);
+    background-size: cover;
+}
+
+#card4 { 
+    background-image: url(../images/card4.jpeg);
+    background-size: cover;
+}
+
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#scroll-to-top img {
+    vertical-align: middle;
+    width: 100%; 
+}
+ 
+#scroll-to-top:hover {
+    background-color: #121212;
+}
+/*----------------------------------------------------End Content--------------------------------------------------*/
+
+/*----------------------------------------------------Start Footer-----------------------------------------------*/
+footer {
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    margin-top: 50px;
+    text-align: center;
+    box-shadow: 0 1px 10px rgba(144, 144, 144, 0.1);
+}
+  
+footer p {
+    font-size: 18px;
+}
+
+.page-editor-link {
+    color: #121212;
+    padding: 0 10px;
+    transition: all 0.2s ease-in-out;
+}
+  
+.page-editor-link:hover {
+    color: #55DD33;
+}
+/*-----------------------------------------------------End Footer------------------------------------------------*/

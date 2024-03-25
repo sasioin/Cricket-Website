@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <title>Comments</title>
+    <link rel="icon" href="images/logo-icon.png">
+    <link rel="stylesheet" href="styles/NavBar.css">
+    <link rel="stylesheet" href="styles/Comments.css">
+</head>
+
+<body>
+    <!--Start Navigation-->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="Home.html"><img class="logo" src="images/logo.png" alt="Website Logo"></a>
+                <ul class="nav-links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Comments.html" class="active">Comments</a></li>
+                    <li><a href="Quiz.html">Quiz</a></li>
+                    <li><a href="Sitemap.html">Sitemap</a></li>
+                    <li><a href="Store.html">Store</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--End Navigation--> 
+     <!--Start Form-->              
+    <form id="feedback-form" novalidate>
+        <h1>Send us your feedback!</h1>
+        <div class="warning" id="warning-rating">
+            <img class="warning-icon" src="images/warning.png" alt="Warning Icon">
+            <p>This question is required!</p>
+        </div>
+
+        <div class="form-box" id="question-1">
+            <label>How satisfied are you with the overall experience on our website?</label>
+            <div class="rating">
+                <input type="radio" id="rating-1" name="rating" value="1" required>
+                <label for="rating-1">1</label>
+                <input type="radio" id="rating-2" name="rating" value="2">
+                <label for="rating-2">2</label>
+                <input type="radio" id="rating-3" name="rating" value="3">
+                <label for="rating-3">3</label>
+                <input type="radio" id="rating-4" name="rating" value="4">
+                <label for="rating-4">4</label>
+                <input type="radio" id="rating-5" name="rating" value="5">
+                <label for="rating-5">5</label>
+                <input type="radio" id="rating-6" name="rating" value="6">
+                <label for="rating-6">6</label>
+                <input type="radio" id="rating-7" name="rating" value="7">
+                <label for="rating-7">7</label>
+                <input type="radio" id="rating-8" name="rating" value="8">
+                <label for="rating-8">8</label>
+                <input type="radio" id="rating-9" name="rating" value="9">
+                <label for="rating-9">9</label>
+                <input type="radio" id="rating-10" name="rating" value="10">
+                <label for="rating-10">10</label>
+            </div>
+        </div>
+
+        <div class="warning" id="warning-reasoning">
+            <img class="warning-icon" src="images/warning.png" alt="Warning Icon">
+            <p>This question is required!</p>
+        </div>
+
+        <div class="form-box" id="question-2">
+            <label for="reasoning">Please provide reasoning for this rating:</label>
+            <textarea id="reasoning" name="reasoning" rows="5" required></textarea>
+        </div>
+
+        <div class="form-box" id="question-3">
+            <label for="wantMethod">How did you want to complete this task today? (optional)</label>
+            <select id="wantMethod" name="wantMethod">
+                <option value="" disabled selected>-- Select an option --</option>
+                <option value="Phone">Phone</option>
+                <option value="Website">Website</option>
+                <option value="Webchat">Webchat</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Email">Email</option>
+            </select>
+        </div>
+
+        <div class="form-box" id="question-4">
+            <label for="preferMethod">If you had to complete this task again, how would you prefer to do it? (optional)</label>
+            <select id="preferMethod" name="wantMethod">
+                <option value="" disabled selected>-- Select an option --</option>
+                <option value="Phone">Phone</option>
+                <option value="Website">Website</option>
+                <option value="Webchat">Webchat</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Email">Email</option>
+            </select>
+        </div>
+
+        <div class="form-box" id="question-5">
+            <label for="comments">Additional comments:</label>
+            <textarea name="comments" id="comments" rows="5"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+    <!--End Form-->
+    <!--Start Thanking Page-->
+    <div id="thanks-page">
+        <h1>Thank You!</h1>
+        <div id="thanks-message">
+            <p>Thank you for taking time to give your feedback!</p>
+        </div>
+    </div>
+    <!--End Thanking Page-->
+    <!--Start Footer-->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 <span class="website-name">CRICKET ZONE</span>. All rights reserved. | <a class="page-editor-link" href="Editor2.html">Page Editor</a></p>
+        </div>
+    </footer>
+    <!--End Footer-->
+    <script src="scripts/Comments.js"></script>
+</body>
+
+</html>

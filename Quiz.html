@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>One Wicket Quiz</title>
+    <link rel="icon" href="images/logo-icon.png">
+    <link rel="stylesheet" href="styles/Quiz.css">
+    <link rel="stylesheet" href="styles/NavBar.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="Home.html"><img class="logo" src="images/logo.png" alt="Website Logo"></a>
+                <ul class="nav-links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Comments.html">Comments</a></li>
+                    <li><a href="Quiz.html" class="active">Quiz</a></li>
+                    <li><a href="Sitemap.html">Sitemap</a></li>
+                    <li><a href="Store.html">Store</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="container">
+        <!--    Start Section     -->
+        <div id="start">Press to Start</div>
+
+        <!--    Guide Section    -->
+        <div id="guide">
+            <h2>About this Quiz</h2>
+            <h4>1.You have 2 min for complete this quiz.</h4>
+            <h4>2.You have total of 10 Questions.</h4>
+            <h4>3.After the 2 min the quiz ends it self.</h4>
+            <h4>4.You will get 1 mark for correct answer.</h4>
+            <h4>5.The quiz results will be display in ending.</h4>
+            <div id="button">
+                <button id="exit">Exit</button>
+                <button id="continue" >Continue</button>
+            </div>
+        </div>
+
+        <!--    Quiz Section    -->
+        <div id="quiz">
+            <div id="quiz_header">
+                <div id="timer">
+                    <h6>Time Left</h6>
+                    <h6 id="time">--</h6>
+                </div>
+            </div>
+
+            <!--     Quiz Questions  -->
+
+            <div id="question">
+                <h2 id="questionNo"></h2>
+                <h2 id="questionText"></h2>
+            </div>
+
+            <!--       Quiz Choices   -->
+
+            <div id="optionList">
+                <h4 class="choice_que" id="option1"></h4>
+                <h4 class="choice_que" id="option2"></h4>
+                <h4 class="choice_que" id="option3"></h4>
+                <h4 class="choice_que" id="option4"></h4>
+            </div>
+
+            <!--  Answers Section-->
+
+            <div id="answersSection">
+                <h3 id="out">exit</h3>
+                <h3 id="total_correct"></h3>
+                <h3 id="next_question">Next</h3>
+            </div>
+        </div>
+        <!--   Result Section  -->
+        <div id="result">
+            <button id="startAgain">Start Again</button>
+            <h6 id="done">You Got 4 Out Of 10</h6>
+            <h6 id="wrong">You incorrectly answered 5 Questions</h6>
+            <h6 id="spent">The time you spent</h6>
+            <button id="quit">Quit</button>
+        </div>
+    </div>
+    <script src="scripts/Quizq.js"></script>
+    <script src="scripts/Quiz.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 <span class="website-name">CRICKET ZONE</span>. All rights reserved. | <a class="page-editor-link" href="Editor3.html">Page Editor</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

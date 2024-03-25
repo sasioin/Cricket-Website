@@ -1,0 +1,117 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7;
+    
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    box-shadow: 0 1px 10px rgba(144, 144, 144, 0.1);
+    z-index: 1;
+}
+  
+.container {
+    color: #121212;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 380px;
+}
+  
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li +li {
+    margin-left: 50px;
+}
+
+.nav-links li a {
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 33px;
+    border-bottom: 4px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+  
+.nav-links li a:hover {
+    border-bottom: 4px solid #121212;
+}
+  
+.nav-links li a.active {
+    color: #55DD33;
+    border-bottom: 4px solid #55DD33; 
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #121212;
+}
+
+.website-name {
+    color: #55DD33;
+    font-weight: bold;;
+}
+
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#scroll-to-top img {
+    vertical-align: middle;
+    width: 100%; 
+}
+ 
+#scroll-to-top:hover {
+    background-color: #121212;
+}
+
+footer {
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    margin-top: 50px;
+    text-align: center;
+    box-shadow: 0 1px 10px rgba(144, 144, 144, 0.1);
+}
+  
+footer p {
+    font-size: 18px;
+}
+
+.page-editor-link {
+    color: #121212;
+    padding: 0 10px;
+    transition: all 0.2s ease-in-out;
+}
+  
+.page-editor-link:hover {
+    color: #55DD33;
+}
+  
